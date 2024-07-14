@@ -39,6 +39,11 @@ $('.search .row .i2').on('keyup', async function()
 
 $('#Categories').on('click', async function()
 {
+    if(!navOpen)
+    {
+        toggle();
+
+    }
     if(!$('.details').hasClass('d-none'))
     {
         $('.details').addClass('d-none');
@@ -65,6 +70,11 @@ $('#Categories').on('click', async function()
 
 $('#Search').on('click', function()
 {
+    if(!navOpen)
+    {
+        toggle();
+        
+    }
     if(!$('.details').hasClass('d-none'))
     {
         $('.details').addClass('d-none');
@@ -85,6 +95,11 @@ $('#Search').on('click', function()
 });
 $('#Area').on('click', async function()
 {
+    if(!navOpen)
+    {
+        toggle();
+        
+    }
     if(!$('.details').hasClass('d-none'))
     {
         $('.details').addClass('d-none');
@@ -110,6 +125,11 @@ $('#Area').on('click', async function()
 });
 $('#Ingredients').on('click', async function()
 {
+    if(!navOpen)
+    {
+        toggle();
+        
+    }
     if(!$('.details').hasClass('d-none'))
     {
         $('.details').addClass('d-none');
@@ -136,6 +156,11 @@ $('#Ingredients').on('click', async function()
 
 $('#Contact').on('click', async function()
 {
+    if(!navOpen)
+    {
+        toggle();
+        
+    }
     if(!$('.details').hasClass('d-none'))
     {
         $('.details').addClass('d-none');
@@ -333,6 +358,11 @@ async function DispalyCtegories()
     $('.spinner-container').fadeOut();
     $('.c-img .image').on('click',  function()
     {
+        if(!navOpen)
+        {
+            toggle();
+
+        }
         let value = $(this).find('h3').text();
         console.log(value);
         filterByCategory(value);
@@ -363,7 +393,13 @@ async function DispalyDetails(data) {
 
     for (let i = 0; i < len; i++) {
         card[i].addEventListener('click', async (e) => {
+            if(!navOpen)
+            {
+                toggle();
+
+            }
             $('.spinner-container').fadeIn();
+
             if(!$('.search').hasClass('d-none'))
             {
                 $('.search').addClass('d-none');
@@ -475,6 +511,11 @@ async function DisplayAreas()
     $('.spinner-container').fadeOut();
     $('.it .items .area').on('click',  function()
     {
+        if(!navOpen)
+        {
+            toggle();
+
+        }
         let value = $(this).find('h3').text();
         filterByAreas(value);
     });
@@ -536,6 +577,11 @@ async function DisplayIngrediants() {
         $('.spinner-container').fadeOut();
 
         $('.it .items .ingre').on('click', function() {
+            if(!navOpen)
+            {
+                toggle();
+
+            }
             let value = $(this).find('h3').text();
             filterByIngrediants(value);
         });

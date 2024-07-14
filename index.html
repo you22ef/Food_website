@@ -1,0 +1,150 @@
+<html>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/skitter.css" />
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Yummy</title>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+
+<body>
+
+  <div class="spinner-container ">
+    <i class="fas fa-spinner fa-spin fa-4x"></i> 
+  </div>
+
+  <aside class="d-flex">
+    <div class="contain">
+      <div class="navbar overflow-hidden  p-0 d-flex align-items-start">
+        <ul class="navbar-nav d-flex ms-4 mt-4 flex-column   ">
+          <div class="links overflow-hidden">
+            <li class="nav-item i5">
+              <a class="nav-link p-0 " aria-current="page" href="#" id="Search">Search</a>
+            </li>
+            <li class="nav-item i1">
+              <a class="nav-link p-0" href="#" id="Categories">Categories</a>
+            </li>
+            <li class="nav-item i2">
+              <a class="nav-link p-0" href="#" id="Area">Area</a>
+            </li>
+            <li class="nav-item i3">
+              <a class="nav-link p-0" href="#" id="Ingredients">Ingredients</a>
+            </li>
+            <li class="nav-item i4">
+              <a class="nav-link p-0" href="#" id="Contact">Contact Us</a>
+            </li>
+          </div>
+          
+          <div class="footer d-flex flex-column justify-content-start align-items-start">
+            <div class="icons d-flex   ">
+              <a href="#" class="fa-brands fa-facebook"></a>
+              <a href="#" class="fa-brands fa-twitter"></a>
+              <a href="#" class="fa-solid mb-1 fa-globe d-block"></a>
+            </div>
+            <div class="text">
+              <p class="text-white me-5">Copyright Â© 2019 All Rights <br> Reserved. </p>
+
+            </div>
+
+          </div>
+        </ul>
+
+      </div>
+    </div>
+
+
+    <div class="toggler z-3 bg-white d-flex flex-column justify-content-between align-items-center mt-0">
+      <img src="images/logo.png" class="mt-4" alt="">
+      <i class="fa-solid open-close-icon fa-2x fa-x"></i>
+      <div class="mb-4">
+        <a href="#" class="fa-solid mb-1 fa-globe d-block"></a>
+        <a href="#" class="fa-solid fa-share-nodes"></a>
+      </div>
+    </div>
+
+  </aside>
+
+
+  <div class="details d-none">
+    
+  </div>
+  <div class="container z-3 search d-none">
+    <div class="row py-4  ">
+      <div class="col-md-6 ">
+          <input  class="form-control bg-transparent text-white i1" type="text" placeholder="Search By Name">
+      </div>
+      <div class="col-md-6">
+          <input  maxlength="1" class="form-control bg-transparent text-white i2" type="text" placeholder="Search By First Letter">
+      </div>
+    </div>
+  </div>
+  <div class="container d-none contact ">
+    <div class="container w-75 text-center">
+      <div class="row g-4">
+          <div class="col-md-6">
+              <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+              <div id="nameAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Special characters and numbers not allowed
+              </div>
+          </div>
+          <div class="col-md-6">
+              <input id="emailInput" type="email" class="form-control" placeholder="Enter Your Email">
+              <div id="emailAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Email not valid *exemple@yyy.zzz
+              </div>
+          </div>
+          <div class="col-md-6">
+              <input id="phoneInput" type="text" class="form-control " placeholder="Enter Your Phone">
+              <div id="phoneAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Enter valid Phone Number
+              </div>
+          </div>
+          <div class="col-md-6">
+              <input id="ageInput" type="number" class="form-control " placeholder="Enter Your Age">
+              <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Enter valid age
+              </div>
+          </div>
+          <div class="col-md-6">
+              <input id="passwordInput" type="password" class="form-control " placeholder="Enter Your Password">
+              <div id="passwordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Enter valid password *Minimum eight characters, at least one letter and one number:*
+              </div>
+          </div>
+          <div class="col-md-6">
+              <input id="repasswordInput" type="password" class="form-control " placeholder="Repassword">
+              <div id="repasswordAlert" class="alert alert-danger w-100 mt-2 d-none">
+                  Enter valid repassword 
+              </div>
+          </div>
+      </div>
+      <button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+  </div>
+  </div>
+  <div class="container it ">
+    <div class="row items gy-4">
+
+    </div>
+
+  </div>
+
+  
+  
+  
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

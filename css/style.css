@@ -1,0 +1,246 @@
+
+body
+{
+    background-color: black;
+}
+
+aside
+{
+    position: fixed;
+    left: 0;
+    z-index: 5000;
+    height: 100vh;
+    
+}
+
+
+.navbar
+{
+    height: 100vh;
+    background-color: #0D0D0D;
+    --bs-navbar-hover-color: white;
+    white-space: nowrap;
+}
+
+.navbar a
+{
+   color: white;
+}
+
+.nav-item
+{
+    margin-bottom: 16px;
+    position: relative;
+    
+}
+
+.navbar .footer
+{
+    position: relative;
+    
+}
+
+.navbar-nav .footer
+{
+    
+    position: relative;
+    top: 400px;
+}
+
+.navbar-nav .footer a
+{
+    text-decoration: none;
+    margin-right: 5px;
+    color:  white;
+}
+
+.toggler
+{
+
+    padding-inline: 10px;
+    height: 100vh;
+}
+
+.toggler a
+{
+    color: #212529;
+    text-decoration: none;
+   
+}
+.toggler .open-close-icon
+{
+    cursor: pointer;
+}
+
+.toggler img
+{
+    width: 50px;
+   
+}
+
+.container
+{
+    overflow: auto;
+}
+
+.container img
+{
+    
+    width: 100%;
+    border-radius: 10px;
+}
+.items .c-img .image
+{
+    
+   cursor: pointer;
+}
+
+.container .row
+{
+    
+    margin-top: 30px;
+    
+}
+
+.container .c-img
+{
+    
+    position: relative;
+
+}
+
+.container .image
+{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .cover
+{
+    
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    transform: translateY(110%);
+    transition: all 0.5s ease;
+}
+
+.container .image:hover .cover
+{
+    
+   transform: translateY(0%);
+}
+
+.details
+{
+    background-color: black;
+    z-index: 1000;
+    height: 100vh;
+    width: 100%;
+}
+
+.search input
+{
+    position: relative;
+    background-color: red;
+    z-index: 2000 !important; 
+}
+
+.details .image2
+{
+    margin-top: 50px;
+    width: 420px;
+}
+.details .image img
+{
+    width: 100%;
+}
+
+.details .text
+{
+    margin-top: 50px;
+}
+
+
+.recipes .text 
+{
+    text-align: center;
+    color: #055160;
+    background-color: #CFF4FC;
+    padding: 8px;
+    padding-block: 4px;
+}
+
+.tags .text 
+{
+    text-align: center;
+    color: #842029;
+    background-color: #F8D7DA;
+    padding: 8px;
+    padding-block: 4px;
+}
+.recipes .row
+{
+   gap: 50px;
+}
+
+.it
+{
+    padding-bottom: 50px;
+}
+
+.items .area .pointer 
+{
+    cursor: pointer;
+}
+
+.items .ingre  
+{
+    cursor: pointer;
+}
+
+.search .row
+{
+    padding-inline: 100px;
+}
+
+.search .row input::placeholder
+{
+    color: #6C757D;
+    
+}
+.contact .row input::placeholder
+{
+    color: #6C757D;
+    
+}
+
+.contact .row input::placeholder
+{
+    color: #6C757D;
+    
+}
+
+.contact
+{
+    position: relative;
+    top: 200px;
+}
+
+
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    align-items: center;
+    height: 100vh; 
+    position: fixed;
+    z-index: 1000;
+  }
